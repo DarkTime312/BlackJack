@@ -7,7 +7,8 @@ from PIL import Image, ImageTk
 
 from data import cards_dictionary
 
-# random.seed(1)
+
+# random.seed(5)
 class PlayerFrame(ctk.CTkFrame):
     def __init__(self, parent, name):
         super().__init__(master=parent, width=1400, height=500)
@@ -32,8 +33,6 @@ class PlayerFrame(ctk.CTkFrame):
         else:
             # Deal 1 card for Dealer
             self.place_a_card()
-
-        # self.place_a_card()
 
     def create_place_holders(self):
         x_padding = 100
@@ -66,14 +65,17 @@ class PlayerFrame(ctk.CTkFrame):
             pass
 
     def dealer_playing(self):
-        self.main_app.dealer_frame.place_a_card()
-        self.list_of_dealer_points = self.main_app.dealer_frame.player_score
-        self.list_of_user_points = self.main_app.player_frame.player_score
-        if sum(self.list_of_dealer_points) <= 15:
-            self.after(500, self.dealer_playing)
+        if not self.main_app.game_ended:
+            self.main_app.dealer_frame.place_a_card()
+            self.list_of_dealer_points = self.main_app.dealer_frame.player_score
+            self.list_of_user_points = self.main_app.player_frame.player_score
+            if sum(self.list_of_dealer_points) < 17:
+                self.after(500, self.dealer_playing)
+            else:
+                self.game_over()
+                self.check_ending()
         else:
             self.check_ending()
-
 
     def update_score(self, score=0):
         self.player_score.append(score)
@@ -96,25 +98,30 @@ class PlayerFrame(ctk.CTkFrame):
         return False
 
     def game_over(self):
-        print('Game over')
         self.main_app.game_ended = True
 
     def check_ending(self):
-        number_of_dealer_points = sum(self.list_of_dealer_points)
-        number_of_player_points = sum(self.list_of_user_points)
-        if self.busted():
-            if number_of_dealer_points > 21:
-                self.main_app.result_label.configure(text='Dealer Busted. You Won')
-            elif number_of_player_points > 21:
-                self.main_app.result_label.configure(text='Busted.. Dealer Won!')
+        if self.busted() and not self.main_app.game_ended:
 
-            # if self.name == 'Player':
-            #     self.main_app.result_label.configure(text='Busted.. Dealer Won!')
-            # else:
-            #     self.main_app.result_label.configure(text='Dealer Busted. You Won')
+            if self.name == 'Player':
+                self.main_app.result_label.configure(text='Busted.. Dealer Won!')
+            else:
+                self.main_app.result_label.configure(text='Dealer Busted. You Won')
             self.main_app.game_ended = True
             self.main_app.new_game_btn.grid(row=0, column=3, padx=5)
-
+        elif self.main_app.game_ended:
+            # game ended . decide a winner
+            number_of_dealer_points = sum(self.main_app.dealer_frame.player_score)
+            number_of_player_points = sum(self.main_app.player_frame.player_score)
+            if number_of_dealer_points > 21:
+                self.main_app.result_label.configure(text='Dealer Busted. You Won')
+            elif number_of_dealer_points > number_of_player_points:
+                self.main_app.result_label.configure(text='Dealer Won')
+            elif number_of_dealer_points < number_of_player_points:
+                self.main_app.result_label.configure(text='You won!')
+            else:
+                self.main_app.result_label.configure(text='Draw!')
+            self.main_app.new_game_btn.grid(row=0, column=3, padx=5)
 
 
 def main():
@@ -157,16 +164,20 @@ def main():
             self.buttons_frame.pack()
             self.buttons_font = ('Helvetica', 30)
 
-            self.button = ctk.CTkButton(self.buttons_frame, text='Dealer', command=self.dealer_frame.place_a_card, font=self.buttons_font)
+            self.button = ctk.CTkButton(self.buttons_frame, text='Dealer', command=self.dealer_frame.place_a_card,
+                                        font=self.buttons_font)
             self.button.grid(row=0, column=0, padx=5)
 
-            self.button2 = ctk.CTkButton(self.buttons_frame, text='Hit me!', command=self.player_frame.place_a_card, font=self.buttons_font)
+            self.button2 = ctk.CTkButton(self.buttons_frame, text='Hit me!', command=self.player_frame.place_a_card,
+                                         font=self.buttons_font)
             self.button2.grid(row=0, column=1, padx=5)
 
-            self.button3 = ctk.CTkButton(self.buttons_frame, text='Stand', command=self.player_frame.dealer_playing, font=self.buttons_font)
+            self.button3 = ctk.CTkButton(self.buttons_frame, text='Stand', command=self.player_frame.dealer_playing,
+                                         font=self.buttons_font)
             self.button3.grid(row=0, column=2, padx=5)
 
-            self.new_game_btn = ctk.CTkButton(self.buttons_frame, text='Start New game', command=self.restart_game, font=self.buttons_font)
+            self.new_game_btn = ctk.CTkButton(self.buttons_frame, text='Start New game', command=self.restart_game,
+                                              font=self.buttons_font)
 
         def restart_game(self):
             self.initialize_game()
