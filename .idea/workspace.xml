@@ -5,65 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8abff10-1d1f-47f5-8a99-95cb1e3f6897" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BlackJack.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/10_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/10_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/10_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/10_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/2_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/2_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/2_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/2_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/3_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/3_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/3_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/3_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/4_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/4_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/4_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/4_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/5_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/5_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/5_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/5_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/6_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/6_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/6_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/6_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/7_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/7_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/7_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/7_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/8_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/8_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/8_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/8_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/9_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/9_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/9_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/9_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/ace_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/ace_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/ace_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/ace_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/jack_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/jack_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/jack_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/jack_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/king_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/king_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/king_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/king_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/queen_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/queen_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/queen_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playing_Cards/queen_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.data.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -103,7 +47,7 @@
       <recent name="C:\Users\Mohammad\Documents\Mnitors\My_script\BlackJack" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BlackJack" />
       <option name="ENV_FILES" value="" />
@@ -126,8 +70,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BlackJack" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.data" />
       </list>
     </recent_temporary>
@@ -148,6 +115,19 @@
       <option name="presentableId" value="Default" />
       <updated>1718749508026</updated>
     </task>
+    <task id="LOCAL-00001" summary="v1">
+      <option name="closed" value="true" />
+      <created>1718751611614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718751611614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1" />
   </component>
 </project>
